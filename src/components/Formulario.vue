@@ -3,17 +3,17 @@
   <section class="src-components-formulario">
     <h1>Final NT 2</h1>
     <label for="Color">Color </label>   
-    <input type="text" v-model="color" @input="actualizar()"> <br>
+    <input type="text" v-model="color"> <br>
 
     <label for="Fondo">Fondo </label> 
-    <input type="text" v-model="fondo" @input="actualizar()"> <br>
+    <input type="text" v-model="fondo" > <br>
 
     <label for="Size">Size</label> 
-    <input type="text" v-model="size" @input="actualizar()"> <br>
+    <input type="text" v-model="size" > <br>
 
     <hr>
     <label for="texto">Texto</label>   
-     <input type="text" v-model="texto"  :style="getEstilos()" @input="actualizar()"> <br>
+     <input type="text" v-model="texto"  :style="getEstilos()" > <br>
 
     <hr>
     <p>cantidad de palabras: {{contarPalabras}} </p>
@@ -49,7 +49,7 @@
           return { 
               color:this.color, 
               backgroundColor:this.fondo, 
-              size:this.size,              
+              fontSize:this.size,              
           }
       }    
     },
