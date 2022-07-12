@@ -19,7 +19,7 @@
     <p>cantidad de palabras: {{contarPalabras}} </p>
 
         <h2>Respuestas:</h2>
-    <p>1:b , 2:c, 3:b, 4:a , 5:d</p> 
+    <p>1:b , 2:c, 3:b, 4:d , 5:b,d</p> 
   </section>
 
 </template>
@@ -41,10 +41,7 @@
       }
     },
     methods: {
-        actualizar(){
-          
-        },
-
+  
     getEstilos() {
           return { 
               color:this.color, 
@@ -54,7 +51,10 @@
       }    
     },
     computed: {
-         contarPalabras(){         
+        
+
+         contarPalabras(){   
+               
          var cant=this.texto.split(' ').length
          
          return cant
