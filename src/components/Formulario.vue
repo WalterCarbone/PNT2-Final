@@ -8,7 +8,7 @@
     <label for="Fondo">Fondo </label> 
     <input type="text" v-model="fondo" > <br>
 
-    <label for="Size">Size</label> 
+    <label for="Size">Size </label> 
     <input type="text" v-model="size" > <br>
 
     <hr>
@@ -54,9 +54,8 @@
         
 
          contarPalabras(){   
-               
-         var cant=this.texto.split(' ').length
-         
+        
+         var cant=this.texto.trim().split(' ').length      
          return cant
          
         }
